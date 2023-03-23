@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AssignmentApp</string>
+    <string name="email"><b>Enter your email</b></string>
+    <string name="password"><b>Enter password</b></string>
+    <string name="confirmPassword"><b>Enter confirm password</b></string>
+    <string name="username"><b>Enter username</b></string>
+    <string name="bio"><b>Enter short bio</b></string>
+</resources>

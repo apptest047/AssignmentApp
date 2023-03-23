@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainProfileView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:background="#b8c5d4"
+            android:orientation="vertical">
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardProfile"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="100dp"
+                app:strokeColor="@color/black"
+                app:strokeWidth="2dp">
+
+                <ImageView
+                    android:id="@+id/imgProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/baseline_account_circle_24" />
+            </com.google.android.material.card.MaterialCardView>
+        </RelativeLayout>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/textUname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/textUserBio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Bio"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter city name"
+        android:id="@+id/et_city"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/buttonWeather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Weather Info"
+        android:onClick="getweather"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp"
+        android:backgroundTint="#0088FF"
+        />
+    <TextView
+        android:id="@+id/textTempretaure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text=""
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/textweather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No Weather Data Found"
+        android:layout_gravity="center_horizontal"
+        android:textSize="25sp"
+        android:textAlignment="center" />
+
+</LinearLayout>
+
